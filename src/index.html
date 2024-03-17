@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <!-- Class "active" is used for current page && class "selected" is used for selected dropdown -->
+  <aside class="fixed top-0 left-0 w-64 h-full bg-gray-900 text-white">
+    <div class="m-5">
+      <a href="#" class="flex items-center">
+        <img src="https://placehold.co/40x40" alt="LOGO" class="rounded">
+        <h1 class="text-4xl font-bold ml-5">LOGO</h1>
+      </a>
+    </div>
+    <ul class="mt-5 p-2">
+      <li class="mt-1 group active">
+        <a href="#"
+          class="inline-block p-3 w-full text-md rounded-lg hover:bg-gray-600 group-[.active]:bg-gray-300 group-[.active]:text-gray-950">
+          <i class="ri-home-3-line"></i>
+          <label for="" class="ml-3">Dashboard</label>
+        </a>
+      </li>
+      <li class="mt-1 group selected">
+        <a href="#"
+          class="sidebar-menu-toggle inline-block p-3 w-full text-md rounded-lg hover:bg-gray-600  group-[.selected]:bg-gray-400 group-[.selected]:text-gray-950">
+          <i class="ri-folders-fill"></i>
+          <label for="" class="ml-3">Catalogs</label>
+          <i class="ri-arrow-down-s-fill float-right group-[.selected]:rotate-90"></i>
+        </a>
+        <ul class=" bg-gray-800 rounded-md hidden group-[.selected]:block">
+          <li class="mt-1"><a href="#"
+              class="inline-block pl-11 py-2 w-full rounded-md hover:bg-gray-600 group-[.active]:bg-gray-300 group-[.active]:text-gray-950">Categories</a>
+          </li>
+          <li class="mt-1"><a href="#"
+              class="inline-block pl-11 py-2 w-full rounded-md hover:bg-gray-600 group-[.active]:bg-gray-300 group-[.active]:text-gray-950">Brands</a>
+          </li>
+          <li class="mt-1"><a href="#"
+              class="inline-block pl-11 py-2 w-full rounded-md hover:bg-gray-600 group-[.active]:bg-gray-300 group-[.active]:text-gray-950">Products</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mt-1 group">
+        <a href="#"
+          class="sidebar-menu-toggle inline-block p-3 w-full text-md rounded-lg hover:bg-gray-600  group-[.selected]:bg-gray-400 group-[.selected]:text-gray-950">
+          <i class="ri-line-chart-fill"></i>
+          <label for="" class="ml-3">Analytics</label>
+          <i class="ri-arrow-down-s-fill float-right group-[.selected]:rotate-90"></i>
+        </a>
+        <ul class="bg-gray-800 rounded-md hidden group-[.selected]:block">
+          <li class="mt-1"><a href="#"
+              class="inline-block pl-11 py-2 w-full rounded-md hover:bg-gray-600 group-[.active]:bg-gray-300 group-[.active]:text-gray-950">Sales
+              Report</a>
+          </li>
+          <li class="mt-1"><a href="#"
+              class="inline-block pl-11 py-2 w-full rounded-md hover:bg-gray-600 group-[.active]:bg-gray-300 group-[.active]:text-gray-950">Product
+              Report</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+  <main class="w-[calc(100% - 256px)] min-h-screen ml-64 flex flex-col">
+    <nav class="basis-10 w-full shadow-lg flex justify-between items-center px-2">
+      <div class="flex items-center">
+        <button type="button" title="Sidebar Toggle" class="pt-1">
+          <i class="ri-menu-fold-fill"></i>
+        </button>
+        <h2 class="text-xl font-semibold ml-2">Dashboard</h2>
+      </div>
+      <ul class="flex">
+        <li class="ml-5 dropdown">
+          <button type="button" title="notification" class="relative dropdown-toggle">
+            <i class="ri-notification-3-fill"></i>
+          </button>
+          <div
+            class="dropdown-menu block absolute w-64 max-h-0 z-10 bg-white right-10 shadow-md overflow-y-auto transition-[max-height] ease duration-200">
+            <ul>
+              <li class="flex flex-row items-center border-b-gray-300 border-b-[1px] p-2">
+                <img src="https:placehold.co/40x40" alt="">
+                <p class="text-sm ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              </li>
+              <li class="flex flex-row items-center border-b-gray-300 border-b-[1px] p-2">
+                <img src="https:placehold.co/40x40" alt="">
+                <p class="text-sm ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              </li>
+              <li class="flex flex-row items-center border-b-gray-300 border-b-[1px] p-2">
+                <img src="https:placehold.co/40x40" alt="">
+                <p class="text-sm ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              </li>
+              <li class="flex flex-row items-center border-b-gray-300 border-b-[1px] p-2">
+                <img src="https:placehold.co/40x40" alt="">
+                <p class="text-sm ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              </li>
+              <li class="flex flex-row items-center border-b-gray-300 border-b-[1px] p-2">
+                <img src="https:placehold.co/40x40" alt="">
+                <p class="text-sm ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              </li>
+              <li class="flex flex-row items-center border-b-gray-300 border-b-[1px] p-2">
+                <img src="https:placehold.co/40x40" alt="">
+                <p class="text-sm ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              </li>
+              <li class="flex flex-row items-center border-b-gray-300 border-b-[1px] p-2">
+                <img src="https:placehold.co/40x40" alt="">
+                <p class="text-sm ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              </li>
+              <li class="flex flex-row items-center border-b-gray-300 border-b-[1px] p-2">
+                <img src="https:placehold.co/40x40" alt="">
+                <p class="text-sm ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="ml-5 dropdown">
+          <button class="dropdown-toggle relative border-blue-300 " title="profile">
+            <img src="https:placehold.co/20x20" alt="User Image" class="rounded">
+          </button>
+          <ul
+            class="dropdown-menu block max-h-0 overflow-y-hidden absolute right-5 bg-white shadow-md transition-[max-height] ease duration-200">
+            <li class=""><a href="#" class="inline-block p-3 w-full hover:text-white hover:bg-gray-600">Profile</a></li>
+            <li class=""><a href="#" class="inline-block p-3 w-full hover:text-white hover:bg-gray-600">Settings</a>
+            </li>
+            <hr>
+            <li class=""><a href="#" class="inline-block p-3 w-full hover:text-white hover:bg-gray-600">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section class="flex-auto min-h-[calc(100vh - 80px)] bg-gray-100 my-2">
+      <div class="w-full shadow-xl px-2 bg-white h-[85vh] flex justify-end items-start">
+        <button title="test">Click Me</button>
+      </div>
+    </section>
+    <footer class="basis-10 h-10 w-full shadow-2xl flex items-center px-2">
+      @footer
+    </footer>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
